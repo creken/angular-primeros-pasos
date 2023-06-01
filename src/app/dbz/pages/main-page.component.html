@@ -1,0 +1,23 @@
+<h1>DBZ Main Page</h1>
+<hr>
+
+<div class="row">
+    <div class="col">
+        <app-dbz-lista
+        [ListaPersonaje]="personajes"
+        (indexEliminar)="eliminar($event)">
+
+    </app-dbz-lista>
+
+    </div>
+
+    <div class="col">
+        <app-dbz-agregar
+        (EmitirGuerrero)="agregar($event)">
+    </app-dbz-agregar>
+
+
+    </div>
+
+
+</div>
